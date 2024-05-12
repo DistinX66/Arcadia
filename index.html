@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Document</title>
 </head>
 <body>
-
-    <header>
-        <header>
+     <header>
             <nav class="navbar navbar navbar-light" style="background-color:#D4A373;">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="/">Arcadia</a>
@@ -20,7 +19,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link" style="color: black;" href="/">Accueil</a>
+                        <a class="nav-link" href="/">Accueil</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="/services">Services</a>
@@ -38,16 +37,30 @@
                   </div>
                 </div>
               </nav>
-        </header>
-    </header>
+      </header>
+    
     
 
     <main id="main-page">
         <!-- Le contenu de la page contenu ici-->
     </main>
 
-    <footer id="footer">Le pied de site</footer>
-
+    <footer class="container-lg text-center footer" style="background-color: #D4A373;">
+      <div class="row align-items-center">
+        <div class="col">
+          <a class="btn" href="#" style=background-color:#FAEDCD; role="button">Contactez-nous</a>
+        </div>
+        <div class="col">
+          Ouvert du lundi au samedi <br>
+          <i class="bi bi-instagram" style="color:#FAEDCD;"></i>
+          <i class="bi bi-facebook" style="color:#FAEDCD;"></i>
+        </div>
+        <div class="col">
+          Addresse <br>
+          1 rue de la Fontaine
+        </div>
+      </div>
+    </footer>
     <script type="module" src="Router/router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
