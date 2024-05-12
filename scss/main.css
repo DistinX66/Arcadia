@@ -568,6 +568,12 @@ legend + * {
   -webkit-appearance: button;
 }
 
+.nav-link {
+  color: #000;
+}
+
+
+
 output {
   display: inline-block;
 }
