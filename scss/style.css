@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+.hero-scene{
+    position: relative;
+    &::before{
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/pexels-jamshed-ahmad-1316297.jpg);
+        background-size: cover;
+        filter: brightness(0.2);
+    }
+    
+    *{
+        position: relative;
+    }
+
+    .hero-scene-content{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
