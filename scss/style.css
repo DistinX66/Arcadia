@@ -34,7 +34,7 @@
 .text-center h2{
     text-align: center;
     padding: 10px;
-    margin: 40px;
+    margin: 60px;
     
 }
 
@@ -48,6 +48,91 @@
 
 .container {
     width: 100%; 
+}
+
+.services{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.bloc-services {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.card-body1{ 
+        display: grid;
+        justify-content:center;
+        align-content:center;
+        justify-items:center; 
+        position: relative;
+        background-color: black;  
+}
+
+.card-body1::before {
+    background-image: url(/images/pexels-gleive-marcio-rodrigues-de-souza-7430422.jpg);
+    background-size: cover;
+    background-position: cover;
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.7;
+}
+
+h5, p, a{
+    isolation: isolate;
+}
+
+
+.card-body2{
+    display: grid;
+        justify-content:center;
+        align-content:center;
+        justify-items:center; 
+        position: relative;
+        background-color: black;
+
+}
+
+.card-body2::before {
+    background-image: url(/images/istockphoto-1144208045-612x612.jpg);
+    background-size: cover;
+    background-position: cover;
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.7;
+
+}
+    
+
+
+.card-body3{
+    display: grid;
+    justify-content:center;
+    align-content:center;
+    justify-items:center; 
+    position: relative;
+    background-color: black;
+    
+}
+
+
+.card-body3::before {
+    background-image: url(/images/istockphoto-936400402-612x612.jpg);
+    background-size: cover;
+    background-position: cover;
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.7;
+
 }
 
 
