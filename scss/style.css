@@ -31,6 +31,15 @@
   }
 
 
+
+  .btn-btn-primary-top{
+    background-color: #D4A373;
+    width: 20%;
+    border-radius: 30px;
+    border-color: #D4A373;
+    color: white;
+    margin-top: 10px;
+  }
 .text-center h2{
     text-align: center;
     padding: 10px;
@@ -135,13 +144,123 @@ h5, p, a{
 
 }
 
+.Avis{
+    height: 500px;
+    background-color: #E9EDC9;
+    width: 50%;
+    
+}
+
+.Temoignage{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    display: flex;
+
+    
+    
+   
+}
+
+.row-tem{
+   
+    height: 300px;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: black;
+    box-shadow: 0px -2px 20px black;
+}
+
+.bloc-btn{
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
 
 
+
+h5.section-heading{
+    text-align: center;
+}
+
+#carouselExampleAutoplaying{
+    width: 100%;
+    display: flex;
+}
+
+.carousel-indicators{
+    top: 0;
+}
+
+.temoignages-name {
+    color: black;
+
+}
+
+
+.carousel-inner {
+    height: 200px;
+}
+
+.carousel-item {
+    margin-top: 30px;
+}
+
+.name{
+    padding-top: 10px;
+}
+
+
+.review{
+    height: 60px;
+    width: 500px;
+    display: inline-flex;
+    
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: #D4A373;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.btn-review{
+    background-color: #D4A373;
+    width: 60%;
+    border-radius: 30px;
+}
+
+h1,h2,h3,h4,h5,h6, {
+    font-family: "Englebert", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+  .navbar-brand{
+    font-family: "Englebert", cursive;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .card-text, .review_ctr, .review {
+    font-family: "Roboto Flex", sans-serif;;
+
+  }
 
  
-
-
-
    
 
  
