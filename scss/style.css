@@ -265,6 +265,24 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
   }
 
+#forêt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-image: url(/images/pexels-andrzej-mucka-2442392.jpg);
+    background-size: cover;
+  }
+
+  h1_forêt{
+    color: black;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
  
    
 
