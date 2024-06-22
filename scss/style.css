@@ -270,8 +270,17 @@ h1,h2,h3,h4,h5,h6 {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    background-image: url(/images/pexels-andrzej-mucka-2442392.jpg);
+    background-image: url(/images/pexels-pixabay-59989.jpg);
     background-size: cover;
+    opacity: 0.7;
+  }
+
+  .hero-scene-content #air {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: black;
   }
 
   h1_forêt{
@@ -281,6 +290,16 @@ h1,h2,h3,h4,h5,h6 {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+  }
+
+  h1_air{
+    color: black;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
   }
 
  
