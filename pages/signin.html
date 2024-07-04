@@ -15,69 +15,72 @@
     <title>Document</title>
 </head>
 
-<header>
-  <nav class="navbar navbar navbar-light" style="background-color:#D4A373;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">Arcadia</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/home.html">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/habitat.html">Habitats</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/signin.html">Connexion/Deconnexion</a>
-            </li>
-          </ul>
+<body>
+  <header>
+    <nav class="navbar navbar navbar-light" style="background-color:#D4A373;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Arcadia</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/home.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/habitat.html">Habitats</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/signin.html">Connexion/Deconnexion</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+  </header>
+  
+  
+  <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
       </div>
-    </nav>
-</header>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  
+  <footer class="container-fluide text-center footer" style="background-color: #D4A373;">
+    <div class="row align-items-center" style="margin-top: 20px; margin-bottom: 20px;">
+      <div class="col">
+        <a class="btn" href="#" style=background-color:#FAEDCD; role="button">Contactez-nous</a>
+      </div>
+      <div class="col">
+        Ouvert du lundi au samedi <br>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram" style="color:#FAEDCD;"></i></a>
+        <a href="https://www.facebook.com/"><i class="bi bi-facebook" style="color:#FAEDCD;"></i></a>
+      </div>
+      <div class="col">
+        Adresse <br>
+        1 rue de la Fontaine
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="Router/router.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-
-<form>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-
-<footer class="container-fluide text-center footer" style="background-color: #D4A373;">
-  <div class="row align-items-center" style="margin-top: 20px; margin-bottom: 20px;">
-    <div class="col">
-      <a class="btn" href="#" style=background-color:#FAEDCD; role="button">Contactez-nous</a>
-    </div>
-    <div class="col">
-      Ouvert du lundi au samedi <br>
-      <a href="https://www.instagram.com/"><i class="bi bi-instagram" style="color:#FAEDCD;"></i></a>
-      <a href="https://www.facebook.com/"><i class="bi bi-facebook" style="color:#FAEDCD;"></i></a>
-    </div>
-    <div class="col">
-      Adresse <br>
-      1 rue de la Fontaine
-    </div>
-  </div>
-</footer>
-<script type="module" src="Router/router.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
