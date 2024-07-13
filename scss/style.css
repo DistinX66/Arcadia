@@ -55,6 +55,20 @@
 
 }
 
+.action-img-buttons{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    opacity: 0.3;
+    transition: all 0.3s
+
+}
+
 .container {
     width: 100%; 
 }
