@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Englebert&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/scss/style.css">
-    <title>Document</title>
+    <title>Arcadia</title>
 </head>
 
-<body style="background-color: #FAEDCD;">
+
+
+<body>
   <header>
     <nav class="navbar navbar navbar-light" style="background-color:#D4A373;">
         <div class="container-fluid">
@@ -46,31 +48,50 @@
       </nav>
   </header>
   
-  <div class="alerte">
-    <h2 class="text-center" style="margin: 100px;">Accés réservé au personnel</h2>
+  <div class="hero-scene text-center text-white">
+    <div class="hero-scene-content">
+      <h1 class="englebert-regular">Une question ?</h1>
+    </div>
   </div>
-
-  <form>
-      <div class="mb-3">
-        <h2 class="title" style="margin-bottom: 30px;">Se connecter</h2>
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary" style="margin-top: 20px; background-color: #D4A373;">Connexion</button>
-  </form>
   
+  <section class="form">
+    <div class="form-text">
+        <h2 class="text-center h2-form" style="margin: 20px; color: black;">Contactez-nous</h2>
+        <p class="text-center" style="margin: 20px; color: black;">Une question sur le parc Arcadia ? Un renseignement
+            ? Envoyez votre demande et nous la transmettrons au bon interlocuteur chez Arcadia.</p> 
+    </div>
+
+    <form class="form" style="width: 70%; margin: auto; padding: 5%; background-color:#FAEDCD; border-radius: 10%;">
+        <div class="mb-3" style="border-radius: 20%;">
+            <label for="exampleFormControlInput1" class="form-label">Prénom</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Prénom">
+          </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+          </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nom@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Votre message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <button type="submit" class="btn btn-secondary" style="margin-top: 20px;">Envoyer</button>
+          </div>
+          
+      </form>
+    
+
+
+
+  </section>
+  
+  </section>
   <footer class="container-fluide text-center footer" style="background-color: #D4A373;">
-    <div class="row align-items-center" style="margin-top: 200px; margin-bottom: 20px;">
+    <div class="row align-items-center" style="margin-top: 20px; margin-bottom: 20px;">
       <div class="col">
-        <a class="btn btn-secondary" href="#" role="button">Contactez-nous</a>
+        <a class="btn" href="#" style=background-color:#FAEDCD; role="button">Contactez-nous</a>
       </div>
       <div class="col">
         Ouvert du lundi au samedi <br>
@@ -85,5 +106,4 @@
   </footer>
   <script type="module" src="Router/router.js"></script>
   <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
