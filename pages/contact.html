@@ -63,21 +63,21 @@
 
     <form class="form" style="width: 70%; margin: auto; padding: 5%; background-color:#FAEDCD; border-radius: 10%;">
         <div class="mb-3" style="border-radius: 20%;">
-            <label for="exampleFormControlInput1" class="form-label">Prénom</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Prénom">
+            <label for="Prénom" class="form-label">Prénom</label>
+            <input type="text" class="form-control" id="prenom" placeholder="Prénom">
           </div>
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+            <label for="Nom" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="nom" placeholder="Nom">
           </div>
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nom@example.com">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="nom@example.com">
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Votre message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            <button type="submit" class="btn btn-secondary" style="margin-top: 20px;">Envoyer</button>
+            <label for="Textarea1" class="form-label">Votre message</label>
+            <textarea class="form-control" id="textarea1" rows="3"></textarea>
+            <button type="submit" class="btn btn-secondary" id="btn-validation" style="margin-top: 20px;">Envoyer</button>
           </div>
           
       </form>
@@ -89,7 +89,7 @@
   
   </section>
   <footer class="container-fluide text-center footer" style="background-color: #D4A373;">
-    <div class="row align-items-center" style="margin-top: 20px; margin-bottom: 20px;">
+    <div class="row align-items-center" style="margin-top: 20px; margin-bottom: 0px;">
       <div class="col">
         <a class="btn" href="#" style=background-color:#FAEDCD; role="button">Contactez-nous</a>
       </div>
@@ -104,6 +104,7 @@
       </div>
     </div>
   </footer>
-  <script type="module" src="Router/router.js"></script>
+  <script type="module" src="/Router/allRoutes.js"></script>
   <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/javascript/auth/contact.js"></script>
 </body>
