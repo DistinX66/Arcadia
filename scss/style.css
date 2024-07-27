@@ -306,13 +306,7 @@ h1,h2,h3,h4,h5,h6 {
     }
   }
 
-  .hero-scene-content #air {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    background-color: black;
-  }
+
 
   h1_forêt{
     color: black;
@@ -333,9 +327,6 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: center;
   }
 
-  #air{
-    background-color: black;
-  }
 
 #btn-secondary{
     width: auto;
@@ -355,6 +346,147 @@ form{
     height: 240px;
 }
 
+#habitat {
+    position: relative;
+    &::before{
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/pexels-photo-1680214.jpeg);
+        background-size: cover;
+        filter: brightness(0.2);
+    }
+    
+    *{
+        position: relative;
+    }
+
+  #habitat-content{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+  #services {
+    position: relative;
+    &::before{
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/istockphoto-1214749834-612x612.jpg);
+        background-size: cover;
+        filter: brightness(0.2);
+    }
+    
+    *{
+        position: relative;
+    }
+
+  #services-content{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+  #contact {
+    position: relative;
+    &::before{
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/pexels-photo-2317904.jpeg);
+        background-size: cover;
+        filter: brightness(0.2);
+    }
+    
+    *{
+        position: relative;
+    }
+
+  #contact-content{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+  #rivière{
+    position: relative;
+    &::before{
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/pexels-pixabay-46540.jpg);
+        height: 500px;
+        background-size: cover;
+        filter: brightness(0.2);
+    }
+    
+    *{
+        position: relative;
+    }
+
+  #rivière-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+  .header-Airs #airs {
+    position: relative;
+    &::before{
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/pexels-photo-1680214.jpeg);
+        background-size: cover;
+        filter: brightness(0.2);
+    }
+    
+    *{
+        position: relative;
+    }
+
+  #airs-content{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+
+
+
+
+
+  
 
 
    
