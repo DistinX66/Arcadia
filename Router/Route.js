@@ -12,7 +12,7 @@ export default class Route {
 export const allRoutes = [
   new Route("/", "Accueil", "/pages/home.html", "index.html"),
   new Route("/habitat", "Habitat", "/pages/habitat.html"),
-  new Route("/signin", "Connexion/Deconnexion", "/pages/signin.html"),
+  new Route("/signin", "Connexion/Deconnexion", "/pages/signin.html", "/javascript/auth/signin.js"),
   new Route("/Forêt", "forêt", "/pages/Forêt.html"),
   new Route("/Air", "air", "/pages/Air.html"),
   new Route("/Rivière", "rivière", "/pages/Rivière.html"),

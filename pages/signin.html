@@ -40,6 +40,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="/pages/signin.html">Connexion/Deconnexion</a>
               </li>
+              <li class="nav-item">
+                <button id="singoutBtn">Deconnexion</button>
+              </li>
             </ul>
           </div>
         </div>
@@ -55,13 +58,16 @@
       <div class="mb-3">
         <h2 class="title" style="margin-bottom: 30px;">Se connecter</h2>
         <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1">
+        <input type="email" class="form-control" id="email">
+        <div class="invalid-feedback">
+          Le mail ou le mot de passe ne correspond pas.
+        </div>
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
+        <input type="password" class="form-control" id="password">
       </div>
-      <button type="submit" class="btn btn-primary" style="margin-top: 20px; background-color: #D4A373;">Connexion</button>
+      <button type="button" class="btn btn-primary" id="btn-signin" style="margin-top: 20px; background-color: #D4A373;">Connexion</button>
   </form>
 
   </div>
@@ -72,7 +78,7 @@
   <footer class="container-fluide text-center footer" style="background-color: #D4A373;">
     <div class="row align-items-center" style="margin-top: 200px; margin-bottom: 20px;">
       <div class="col">
-        <a class="btn btn-secondary" href="#" role="button">Contactez-nous</a>
+        <a class="btn btn-secondary" href="#" role="submit">Contactez-nous</a>
       </div>
       <div class="col">
         Ouvert du lundi au samedi <br>
@@ -85,7 +91,9 @@
       </div>
     </div>
   </footer>
-  <script type="module" src="Router/router.js"></script>
+  <script type="module" src="/Router/router.js"></script>
   <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/javascript/script.js"></script>
+  <script src="/javascript/auth/signin.js"></script>
 
 </body>
