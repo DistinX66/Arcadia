@@ -37,11 +37,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="/pages/contact.html">Contact</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/signin.html">Connexion/Deconnexion</a>
+              <li class="nav-item" data-show='disconnected'>
+                <a class="nav-link hidden" id="connected" href="/pages/signin.html">Connexion</a>
               </li>
-              <li class="nav-item">
-                <button id="singoutBtn">Deconnexion</button>
+              <li class="nav-item" data-show='connected'>
+                <button class="nav-link hidden" id="singoutBtn">Deconnexion</button>
               </li>
             </ul>
           </div>

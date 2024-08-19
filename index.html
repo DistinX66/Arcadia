@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="scss/style.css">
     <title>Accueil</title>
 </head>
-<body>
 
+
+<body>
   
      <header>
             <nav class="navbar navbar navbar-light" style="background-color:#D4A373;">
@@ -38,11 +39,11 @@
                       <li class="nav-item">
                         <a class="nav-link" href="/pages/contact.html">Contact</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/pages/signin.html">Connexion</a>
+                      <li class="nav-item" [data-show] ="disconnected">
+                        <a class="nav-link hidden" id="Connexion" href="/pages/signin.html">Connexion</a>
                       </li>
-                      <li class="nav-item">
-                        <button type="button" id="singoutBtn">Deconnexion</button>
+                      <li class="nav-item" [data-show] ="connected">
+                        <button class="nav-link hidden" id="singoutBtn">Deconnexion</button>
                       </li>
                     </ul>
                   </div>
@@ -54,11 +55,160 @@
 
     <main id="main-page">
 
-      Vide
+      <div class="hero-scene text-center text-white">
+        <div class="hero-scene-content">
+          <h1 class="englebert-regular">Découvrez la magie du monde animal à Arcadia</h1>
+          <button class="btn-btn-primary-top">Réservez</button>
+        </div>
+      </div>
+      
+      <article>
+      <section class="habitat">
+        <h2 class="text-center h2" style="margin: 20px;">Voyagez au cœur de nos différents habitats</h2>
+          <div class="container container-fluid">
+            <div class="row container-fluid"> 
+              <div class="col-4">
+                <div class="card">
+                  <img src="/images/pexels-pixabay-59989.jpg" class="card-img-top img-fluid" alt="La forêt">
+                  <div class="card-body container-fluid">
+                    <h5 class="card-title">La forêt</h5>
+                    <p class="card-text">Plongez au cœur de la forêt tropicale et découvrez ses habitants extraordinaires</p>
+                    <a href="/pages/Forêt.html" class="btn btn-secondary" style="margin-left: 100px; margin-right: 100px; background-color:#D4A373;">Découvrir l'habitat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <img src="/images/pexels-jimmy-chan-1000529.jpg" class="card-img-top img-fluid" alt="La rivière">
+                  <div class="card-body">
+                    <h5 class="card-title">La rivière</h5>
+                    <p class="card-text">Embarquez sous la rivière
+          et rencontrez les animaux qui vivent dans les rivières du monde entier.</p>
+                    <a href="/pages/Rivière.html" class="btn btn-secondary"style="margin-left: 100px; margin-right: 100px; background-color:#D4A373;">Découvrir l'habitat</a>
+                  </div>
+                </div>
+      
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <img src="/images/pexels-monique-laats-733090.jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Les airs</h5>
+                    <p class="card-text">Prenez votre envol et observez le monde du point de vue des oiseaux.</p>
+                    <a href="/pages/Air.html" class="btn btn-secondary" style="margin-left: 100px; margin-right: 100px;background-color:#D4A373;">Découvrir l'habitat</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+       
+        </div>
+      
+      
+      </section>
+       
+          --!--Section des Habitats --!--
+          
+      
+        <section class="bloc-services container-fluid py-auto">
+          <h2 class="services">Au programme de votre visite...</h2>
+            <div class="card-body1"style="height: 200px;">
+              <h5 class="text-center card-text" style="color: white;">Visite des habitats avec un guide</h5>
+              <p class="text-center card-text"style="color: white;">Profitez d'une visite pédagogique et enrichissante pour petits et grands.</p>
+              <a href="#" class="btn btn-secondary" style="margin-left: 100px; margin-right: 100px;background-color:#D4A373;">Télécharger le guide gratuit</a>
+            </div>
+            <div class="card-body2"style="height: 200px;">
+              <h5 class="card-title" style="color: white;">Restauration</h5>
+              <p class="card-text" style="color: white;">Restaurez-vous en famille ou entre amis et profitez d'un moment de détente.</p>
+              <a href="#" class="btn btn-secondary" style="margin-left: 100px; margin-right: 100px;background-color:#D4A373;">Nos menus</a>
+            </div>
+            <div class="card-body3"style="height: 200px;">
+              <h5 class="card-title"style="color: white;">Visite du zoo en petit train</h5>
+              <p class="card-text" style="color: white;">Découvrez les animaux dans leur environnement naturel et profitez d'une vue imprenable sur le zoo.</p>
+              <a href="#" class="btn btn-secondary text-center" style="margin-left: 100px; margin-right: 100px;background-color:#D4A373;">Voir le circuit</a>
+            </div>
+        </section>
+      
+        --!--Section des Avis --!--
+        <section class="Avis container-fluid py-auto w-100%">
+          <h2 class="avis text-center" style="margin-top: 30px;">Profitez d’une belle journée en toute confiance...</h2>
+          <div class="Temoignages container-fluid w-100%" style="margin-top: 100px;
+          margin-bottom: 100px; display: flex; justify-content: space-between;">
+          <div class="bloc-btn">
+            <h5 class="Visiteurs">Nos visiteurs témoignent</h3>
+              <p class="review_ctr" style="margin: 30px;"> Vous avez appréciés votre journée chez Arciadia ? <br>Laissez nous un commentaire.</p>
+              <a href="#" class="btn btn-review text-center" style="background-color:#D4A373;">Laisser un avis</a>
+          </div>
+            
+            <div class="row-tem">
+        
+              <div class="col-3" style="flex: 0 0 auto; width: 85%;" d-flex>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                  <div class="carousel-inner">
+                    <h4 class="temoignages-name">Nom & Prénom</h4>
+                    <div class="carousel-item active">
+                      <h5 class="name">Kokoua</h5>
+                        <p class="review">Les spectacles éducatifs étaient fascinants et ont vraiment aidé mes enfants à comprendre l'importance de la conservation des espèces. Nous avons hâte de revenir !</p>
+                      <div class="carousel-caption d-none d-md-block">
+                        
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <h5 class="name">N'guessan</h5>
+                        <p class="review"> Le personnel est compétent et clairement passionné par leur travail.</p>
+                      <div class="carousel-caption d-none d-md-block">
+                        
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <h5 class="name">Narcisse</h5>
+                        <p class="review">Visiter ce zoo a été une expérience incroyable pour toute ma famille. Les animaux sont bien soignés et les enclos sont propres et spacieux.</p>
+                      </div>
+                      <div class="carousel-caption d-none d-md-block">
+                        
+                    </div>
+                  </div>
+      
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" style="margin-top: 70px;margin-bottom: 50px;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="margin-top: 70px;margin-bottom: 50px;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+        
+              
+      
+      
+            </div>
+      
+      
+          </div>
+      
+      
+      
+        </section>
+      
+          
+      
+      
+        </div>
+      
+      
+      
+      
+        </article>
+
+      
     </main>
     
     <footer class="container-fluide text-center footer" style="background-color: #D4A373;">
-      <div class="row align-items-center" style="margin-top: 20px; margin-bottom: 20px;">
+      <div class="row align-items-center" style="margin-top: 20px; margin-bottom: 0px;">
         <div class="col">
           <a class="btn" href="#" style=background-color:#FAEDCD; role="button">Contactez-nous</a>
         </div>

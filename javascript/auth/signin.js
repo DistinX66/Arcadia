@@ -15,7 +15,7 @@ function checkCredentials() {
       
 
         // Placer ce token en cookie
-        setCookie(email, "admin", 7);
+        setCookie(RoleCookieName, "admin", 7);
 
 
         window.location.replace("/");

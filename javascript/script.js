@@ -2,14 +2,18 @@ const tokenCookieName = "accesstoken";
 
 const RoleCookieName = "role";
 // Assurez-vous que l'élément existe avant d'ajouter l'écouteur d'événement
-const signoutBtn = document.getElementById("signoutBtn");
+const signoutBtn = document.getElementById("singoutBtn");
 
-if (signoutBtn) {
-    signoutBtn.addEventListener("click", signout);
+signoutBtn.addEventListener("click", signout);
+
+function getRole(){
+    return getCookie(RoleCookieName); 
+
 }
 
 function signout() {
-    eraseCookie(email);
+    eraseCookie(tokenCookieName);
+    eraseCookie(RoleCookieName); 
     window.location.reload();
 }
 
@@ -46,8 +50,13 @@ function getCookie(name) {
     return null;
 }
 
-function eraseCookie(value) {
-    document.cookie = value + '=; Max-Age=-99999999;';
+function eraseCookie(name) {
+    document.cookie = name + '=; Max-Age=-99999999; path=/';
+    if (!getCookie(name)) {
+        console.log(`Le cookie '${name}' a été supprimé.`);
+    } else {
+        console.log(`Le cookie '${name}' n'a pas été supprimé.`);
+    }
 }
 
 function isConnected(){
@@ -63,11 +72,49 @@ function isConnected(){
 
 
 
-function newFunction() {
-    if (isConnected()) {
-        alert("Je suis connecté");
-    }
-    else {
-        alert("je ne suis pas connecté");
+
+
+/*Roles Arcadia : 
+
+- disconnected
+- connected (Admin, Employé, Vétérinaire ou client [Disconnected])
+- admin
+- employé
+- vétérinaire
+
+*/
+
+// Function to simulate user connection status
+function isUserConnected() {
+    // Simulate checking connection status
+    // Replace this with actual logic, e.g., checking a session or token
+    return localStorage.getItem('userConnected') === 'true';
+}
+
+// Function to update button visibility based on user status
+function updateButtons() {
+    const connexionButton = document.getElementById('Connexion');
+    const deconnexionButton = document.getElementById('singoutBtn');
+
+    if (isUserConnected()) {
+        connexionButton.classList.add('hidden');
+        deconnexionButton.classList.remove('hidden');
+    } else {
+        connexionButton.classList.remove('hidden');
+        deconnexionButton.classList.add('hidden');
     }
 }
+
+// Event listeners for buttons to toggle connection status
+document.getElementById('Connexion').addEventListener('click', function() {
+    localStorage.setItem('userConnected', 'true');
+    updateButtons();
+});
+
+document.getElementById('singoutBtn').addEventListener('click', function() {
+    localStorage.setItem('userConnected', 'false');
+    updateButtons();
+});
+
+// Initial button update on page load
+window.onload = updateButtons;
