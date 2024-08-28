@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Englebert&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Englebert&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/scss/style.css">
+    <title>Rivière</title>
+</head>
+
+<body style="background-color: #FAEDCD;">
+    <header>
+        <nav class="navbar navbar navbar-light" style="background-color:#D4A373;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/">Arcadia</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/home.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/service.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/habitat.html">Habitats</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item" data-show="disconnected">
+                    <a class="nav-link" href="/pages/signin.html">Connexion</a>
+                  </li>
+                  <li class="nav-item"data-show="connected">
+                    <button class="nav-link" id="singoutBtn">Deconnexion</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </header>
+
+      <div id="rivière" class="hero-scene cover-container-fluid text-center text-white">
+        <div id="rivière-content" class="hero-scene-content">
+          <h1 id="h1_rivière" class="englebert-regular">Les rivières</h1>
+        </div>
+      </div>
+      
+      <section class="habitat-cards">
+        <p class="text-center p" style="margin: 20px;">Plongez dans l'univers fascinant des rivières d'Arcadia et découvrez une faune aquatique riche et variée</p>
+          <div class="container container-fluid">
+            <div class="row container-fluid">
+              <div class="col-4">
+                <div class="card">
+                  <img src="/images/pexels-barthy-bonhomme-185032.jpg" class="card-img-top img-fluid" alt="La loutre">
+                  <div class="card-body container-fluid">
+                    <div class="action-img-buttons">
+                        <button type="button" class="btn btn-outline-light"><i class="bi bi-pen"></i></button>
+                        <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+          
+                      </div>
+                    <h5 class="card-title">La loutre</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Prénom : Baloo</li>
+                        <li class="list-group-item">Race : Carnivore</li>
+                        <li class="list-group-item">Habitat : Rivière</li>
+                      </ul>                          
+                    <a href="#" class="btn btn-secondary" style="margin-left: 100px; margin-right: 100px; background-color:#D4A373;">En savoir plus</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <img src="/images/pexels-min-an-1131460.jpg" class="card-img-top img-fluid" alt="L'hippopotame">
+                  <div class="card-body">
+                    <div class="action-img-buttons">
+                        <button type="button" class="btn btn-outline-light"><i class="bi bi-pen"></i></button>
+                        <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+          
+                      </div>
+                    <h5 class="card-title">L'hippopotame</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Prénom : Hippo</li>
+                      <li class="list-group-item">Race : Herbivore</li>
+                      <li class="list-group-item">Habitat : Riviève</li>
+                    </ul>    
+                    <a href="#" class="btn btn-secondary"style="margin-left: 100px; margin-right: 100px; background-color:#D4A373;">En savoir plus</a>
+                  </div>
+                </div>
+      
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <img src="/images/free-photo-of-nature-oiseau-rose-flamant.jpeg" class="card-img-top img-fluid" alt="Flammant rose">
+                  <div class="card-body">
+                    <div class="action-img-buttons">
+                        <button type="button" class="btn btn-outline-light"><i class="bi bi-pen"></i></button>
+                        <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+          
+                      </div>
+                    <h5 class="card-title">Flamant rose</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Prénom : Flapy</li>
+                      <li class="list-group-item">Race : Omnivore</li>
+                      <li class="list-group-item">Habitat : Rivière</li>
+                    </ul>   
+          
+                    <a href="#" class="btn btn-secondary" style="margin-left: 100px; margin-right: 100px;background-color:#D4A373;">En savoir plus</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn-btn-primary-top text-bold text-black mb-3 mt-3"> Ajouter un animal</button>
+        </div>             
+      </section>   
+      </section>
+      
+         <footer class="container-fluide text-center footer" style="background-color: #D4A373;">
+            <div class="row align-items-center" style="margin-top: 20px; margin-bottom: 20px;">
+              <div class="col">
+                <a class="btn" href="#" style=background-color:#FAEDCD; role="button">Contactez-nous</a>
+              </div>
+              <div class="col">
+                Ouvert du lundi au samedi <br>
+                <a href="https://www.instagram.com/"><i class="bi bi-instagram" style="color:#FAEDCD;"></i></a>
+                <a href="https://www.facebook.com/"><i class="bi bi-facebook" style="color:#FAEDCD;"></i></a>
+              </div>
+              <div class="col">
+                Adresse <br>
+                1 rue de la Fontaine
+              </div>
+            </div>
+          </footer>  
+
+
+
+    <script type="module" src="Router/router.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+    
