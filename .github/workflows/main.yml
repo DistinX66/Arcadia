@@ -14,3 +14,4 @@ jobs:
         server: ftp-zookokoua.alwaysdata.net
         username: zookokoua
         password: ${{ secrets.ftp_password }}
+        protocol: ftps
